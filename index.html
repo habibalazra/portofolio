@@ -21,6 +21,11 @@
 
 <body>
 
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
@@ -104,7 +109,8 @@
       </div>
 
       <div class="hero-visual" style="display: flex; justify-content: center; align-items: center;">
-        <div class="glass-card" style="max-width: 360px; width: 100%; box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);">
+        <div class="glass-card"
+          style="max-width: 360px; width: 100%; box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);">
           <div class="glass-card-body" style="aspect-ratio: 1/1;">
             <img src="./assets/images/profile_hero.png"
               alt="Ahmad Jibril Habib Al Azra - GIS Specialist & Spatial Analyst"
@@ -118,7 +124,7 @@
   <!-- Features/Skills Section -->
   <section id="skills" class="section features">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="badge">
           <span class="lang-id">Personal Skills</span><span class="lang-en">Personal Skills</span>
         </span>
@@ -136,7 +142,7 @@
 
       <div class="features-grid">
         <!-- Card 1: GIS Analyst -->
-        <div class="feature-card">
+        <div class="feature-card reveal delay-100">
           <div class="feature-icon-wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
@@ -189,7 +195,7 @@
         </div>
 
         <!-- Card 2: GIS Specialist -->
-        <div class="feature-card">
+        <div class="feature-card reveal delay-200">
           <div class="feature-icon-wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
@@ -242,7 +248,7 @@
         </div>
 
         <!-- Card 3: Remote Sensing & Ecology -->
-        <div class="feature-card">
+        <div class="feature-card reveal delay-300">
           <div class="feature-icon-wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
@@ -298,7 +304,7 @@
         </div>
 
         <!-- Card 4: Disaster Management & Field Survey -->
-        <div class="feature-card">
+        <div class="feature-card reveal delay-400">
           <div class="feature-icon-wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
@@ -358,7 +364,7 @@
   <!-- Projects/Experience Section -->
   <section id="projects" class="section projects">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="badge">
           <span class="lang-id">Pengalaman Kerja & Proyek</span><span class="lang-en">Work Experience & Projects</span>
         </span>
@@ -370,7 +376,7 @@
 
       <!-- Experience 1 -->
       <div class="project-item">
-        <div class="project-content">
+        <div class="project-content reveal-left">
           <span class="badge"
             style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Geoswara
             Surveys</span>
@@ -387,10 +393,11 @@
               project.</span>
           </p>
         </div>
-        <div class="project-visual">
+        <div class="project-visual reveal-right delay-100">
           <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
             <div class="glass-card-body">
-              <img src="./assets/images/geoswara_surveys.jpg" alt="Geoswara Surveys - GIS Staff Project Experience" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+              <img src="./assets/images/geoswara_surveys.jpg" alt="Geoswara Surveys - GIS Staff Project Experience"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
             </div>
           </div>
         </div>
@@ -398,7 +405,7 @@
 
       <!-- Experience 2 -->
       <div class="project-item">
-        <div class="project-content">
+        <div class="project-content reveal-left">
           <span class="badge"
             style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Burkitt
             Analytics</span>
@@ -424,11 +431,12 @@
             </svg>
           </a>
         </div>
-        <div class="project-visual">
+        <div class="project-visual reveal-right delay-100">
           <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
 
             <div class="glass-card-body">
-              <img src="./assets/images/burkitt_dingo.png" alt="Burkitt Analytics - Dingo 2030 Network WebGIS" style="width: 100%; height: 100%; object-fit: cover;">
+              <img src="./assets/images/burkitt_dingo.png" alt="Burkitt Analytics - Dingo 2030 Network WebGIS"
+                style="width: 100%; height: 100%; object-fit: cover;">
             </div>
           </div>
         </div>
@@ -436,7 +444,7 @@
 
       <!-- Experience 3 -->
       <div class="project-item">
-        <div class="project-content">
+        <div class="project-content reveal-left">
           <span class="badge"
             style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Dinas
             Bina Marga & Penataan Ruang Jabar</span>
@@ -463,7 +471,7 @@
             </svg>
           </a>
         </div>
-        <div class="project-visual">
+        <div class="project-visual reveal-right delay-100">
           <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
 
             <div class="glass-card-body"
@@ -478,8 +486,8 @@
   </section>
 
   <!-- CTA / Contact -->
-  <section id="contact" class="section" style="background-color: white; text-align: center; padding: 6rem 1.5rem;">
-    <div class="container">
+  <section id="contact" class="section" style="background-color: transparent; text-align: center; padding: 6rem 1.5rem;">
+    <div class="container reveal-scale">
       <h2 class="section-title" style="margin-bottom: 1.5rem;">
         <span class="lang-id">Mari Berkolaborasi!</span>
         <span class="lang-en">Let's Collaborate!</span>
@@ -518,7 +526,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="container reveal">
       <div class="footer-content">
         <div class="footer-col" style="flex: 2;">
           <a href="#" class="brand" style="margin-bottom: 1rem;">
@@ -574,6 +582,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 
   <script src="./js/main.js"></script>
   <script src="./js/map.js"></script>
