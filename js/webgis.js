@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Land Use Category Configurations with Curated GIS Palette
   const CATEGORIES = [
-    { id: 'Permukiman & Bangunan', label: 'Permukiman & Bangunan', color: '#f97316', icon: '🏡' },
-    { id: 'Kawasan Industri', label: 'Kawasan Industri', color: '#a855f7', icon: '🏢' },
-    { id: 'Pertanian & Perkebunan', label: 'Pertanian & Perkebunan', color: '#84cc16', icon: '🌾' },
-    { id: 'Hutan', label: 'Hutan', color: '#15803d', icon: '🌲' },
-    { id: 'Semak Belukar', label: 'Semak Belukar', color: '#22c55e', icon: '🌿' },
-    { id: 'Lahan Terbuka / Kosong', label: 'Lahan Terbuka / Kosong', color: '#eab308', icon: '🏜️' },
-    { id: 'Tubuh Air & Perairan', label: 'Tubuh Air & Perairan', color: '#06b6d4', icon: '💧' },
-    { id: 'Infrastruktur & Transportasi', label: 'Infrastruktur & Transportasi', color: '#64748b', icon: '🛣️' }
+    { id: 'Permukiman & Bangunan', label: 'Permukiman & Bangunan', color: '#f97316' },
+    { id: 'Kawasan Industri', label: 'Kawasan Industri', color: '#a855f7' },
+    { id: 'Pertanian & Perkebunan', label: 'Pertanian & Perkebunan', color: '#84cc16' },
+    { id: 'Hutan', label: 'Hutan', color: '#15803d' },
+    { id: 'Semak Belukar', label: 'Semak Belukar', color: '#22c55e' },
+    { id: 'Lahan Terbuka / Kosong', label: 'Lahan Terbuka / Kosong', color: '#eab308' },
+    { id: 'Tubuh Air & Perairan', label: 'Tubuh Air & Perairan', color: '#06b6d4' },
+    { id: 'Infrastruktur & Transportasi', label: 'Infrastruktur & Transportasi', color: '#64748b' }
   ];
 
   const BASEMAP_TILES = {
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <input type="checkbox" class="layer-toggle-checkbox" data-category="${cat.id}" ${activeCategories.has(cat.id) ? 'checked' : ''} />
           <div class="color-chip" style="background-color: ${cat.color};"></div>
           <div>
-            <div class="layer-name">${cat.icon} ${cat.label}</div>
+            <div class="layer-name">${cat.label}</div>
             <div class="layer-subtext">${stat.count.toLocaleString()} Poligon • ${stat.areaHa.toLocaleString('id-ID', { maximumFractionDigits: 1 })} Ha</div>
           </div>
         </div>
@@ -314,11 +314,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!e.features.length) return;
       const feat = e.features[0];
       const props = feat.properties;
-      const catConfig = CATEGORIES.find(c => c.id === props.category) || { color: '#2b593f', icon: '🗺️' };
+      const catConfig = CATEGORIES.find(c => c.id === props.category) || { color: '#2b593f' };
 
       const popupHtml = `
         <div class="popup-header" style="background-color: ${catConfig.color};">
-          <div class="popup-badge">${catConfig.icon} ${props.category}</div>
+          <div class="popup-badge">${props.category}</div>
           <div class="popup-title">${props.tutupan_lahan || props.category}</div>
         </div>
         <div class="popup-body">
