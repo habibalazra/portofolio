@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function handleScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    
+
     // Scroll progress
     if (progressBar && docHeight > 0) {
       const scrollPercent = (scrollTop / docHeight) * 100;
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 5. Scroll-Triggered Reveal Animations (IntersectionObserver)
   const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-  
+
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -149,10 +149,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const rect = heroCard.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
-      
+
       const rotateX = -(y / rect.height) * 12;
       const rotateY = (x / rect.width) * 12;
-      
+
       heroCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
     });
 

@@ -59,6 +59,26 @@ html {
   font-size: 16px;
 }
 
+/* Custom Scrollbar - Contrasting Color */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--brand-primary);
+  border-radius: 8px;
+  border: 2px solid var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--brand-hover);
+}
+
 body {
   background-color: #F9FCFF;
   background-image: url('../assets/images/topography_pattern.png');
@@ -1103,6 +1123,7 @@ p {
     opacity: 0;
     transform: translateY(-100%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -1114,6 +1135,7 @@ p {
     opacity: 0;
     transform: translateY(28px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -1125,6 +1147,7 @@ p {
     opacity: 0;
     transform: translateY(30px) scale(0.95);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -1132,9 +1155,12 @@ p {
 }
 
 @keyframes ambientFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }
@@ -1173,7 +1199,7 @@ p {
 
 .hero-visual .glass-card {
   opacity: 0;
-  animation: heroCardIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards, ambientFloat 6s ease-in-out 1.25s infinite;
+  animation: heroCardIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
 }
 
 /* ==========================================
@@ -1216,11 +1242,25 @@ p {
 }
 
 /* Delays for Staggered Waterfalls */
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; }
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
 
 /* Active Nav Indicator */
 .nav-links a.active-nav {
