@@ -1,3 +1,36 @@
+// Tab switcher for Pengalaman Kerja / Proyek
+function switchTab(tab) {
+  const panelWork = document.getElementById('panel-work');
+  const panelProject = document.getElementById('panel-project');
+  const btnWork = document.getElementById('tab-work');
+  const btnProject = document.getElementById('tab-project');
+
+  if (tab === 'work') {
+    panelWork.style.display = '';
+    panelProject.style.display = 'none';
+    btnWork.style.color = 'var(--text-primary)';
+    btnWork.style.borderBottomColor = 'var(--brand-color, #2563eb)';
+    btnProject.style.color = 'var(--text-secondary)';
+    btnProject.style.borderBottomColor = 'transparent';
+    btnWork.classList.add('active');
+    btnProject.classList.remove('active');
+  } else {
+    panelWork.style.display = 'none';
+    panelProject.style.display = '';
+    btnProject.style.color = 'var(--text-primary)';
+    btnProject.style.borderBottomColor = 'var(--brand-color, #2563eb)';
+    btnWork.style.color = 'var(--text-secondary)';
+    btnWork.style.borderBottomColor = 'transparent';
+    btnProject.classList.add('active');
+    btnWork.classList.remove('active');
+  }
+}
+
+// Initialize tab on load
+document.addEventListener('DOMContentLoaded', () => {
+  switchTab('work');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Mobile Menu Toggle
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');

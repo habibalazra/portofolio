@@ -100,12 +100,13 @@ document.addEventListener('DOMContentLoaded', () => {
     container: 'map',
     style: {
       'version': 8,
+      'glyphs': 'https://fonts.openmaptiles.org/{fontstack}/{range}.pbf',
       'sources': {
         'basemap-tiles': {
           'type': 'raster',
           'tiles': [BASEMAP_TILES.voyager],
           'tileSize': 256,
-          'attribution': '&copy; CARTO & OpenStreetMap'
+          'attribution': '&copy; CARTO &amp; OpenStreetMap'
         }
       },
       'layers': [
@@ -133,11 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
       map.addImage('pattern-sawah', createSawahPatternCanvas());
       map.addImage('pattern-semak', createSemakPatternCanvas());
 
-      // Fetch GeoJSON from assets/images/areakerja.json (or fallback to assets/geojson/areakerja.json)
-      let response = await fetch('./assets/images/areakerja.json');
-      if (!response.ok) {
-        response = await fetch('./assets/geojson/areakerja.json');
-      }
+      // Fetch GeoJSON from organized folder: assets/geojson/webgis/areakerja.json
+      const response = await fetch('./assets/geojson/webgis/areakerja.json');
       geojsonData = await response.json();
 
       // Ensure feature IDs exist for hover/state management

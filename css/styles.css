@@ -1325,3 +1325,34 @@ p {
 .back-to-top:hover svg {
   transform: translateY(-2px);
 }
+
+/* ─── Tab Switcher ─── */
+.tab-btn {
+  position: relative;
+}
+
+.tab-btn.active {
+  color: var(--text-primary) !important;
+  border-bottom-color: var(--brand-primary) !important;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary) !important;
+  background: var(--bg-tertiary);
+}
+
+/* ─── Map Marker Labels ─── */
+.jarak-label-marker {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #fcd34d;
+  color: #92400e;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 11.5px;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+  transform: translateY(-5px);
+}

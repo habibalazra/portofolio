@@ -374,119 +374,262 @@
         </h2>
       </div>
 
-      <!-- Experience 1 -->
-      <div class="project-item">
-        <div class="project-content reveal-left">
-          <span class="badge"
-            style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Geoswara
-            Surveys</span>
-          <h3 class="project-title text-2xl font-extrabold tracking-tight" style="font-size: 2rem; margin-top: 1rem;">
-            GIS Staff</h3>
-          <p class="project-desc">
-            <span class="lang-id"><strong>Delineasi dan Inventarisasi Bidang Tanah:</strong> Manajemen data spasial
-              end-to-end, termasuk delineasi dan inventarisasi kepemilikan lahan ROW SUTT 150 Kv KEK Kendal berdasarkan
-              data Stake Out lapangan.<br><br><strong>Visualisasi Data:</strong> Memvisualisasikan hasil pengolahan data
-              bidang tanah untuk keperluan proyek ROW.</span>
-            <span class="lang-en"><strong>Land Delineation and Inventory:</strong> End-to-end spatial data management,
-              delineating and inventorying land ownership for ROW SUTT 150 Kv KEK Kendal based on field Stake Out
-              data.<br><br><strong>Data Visualization:</strong> Visualizing processed land parcel data for the ROW
-              project.</span>
-          </p>
-        </div>
-        <div class="project-visual reveal-right delay-100">
-          <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
-            <div class="glass-card-body">
-              <img src="./assets/images/geoswara_surveys.jpg" alt="Geoswara Surveys - GIS Staff Project Experience"
-                style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+      <!-- Tab Switcher -->
+      <div class="tab-switcher reveal"
+        style="display: flex; gap: 0.5rem; margin-bottom: 3rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0;">
+        <button class="tab-btn active" id="tab-work" onclick="switchTab('work')"
+          style="padding: 0.75rem 1.75rem; border: none; background: none; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--text-secondary); border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.3s ease; border-radius: 0; font-family: inherit;">
+          <span class="lang-id">Pengalaman Kerja</span><span class="lang-en">Work Experience</span>
+        </button>
+        <button class="tab-btn" id="tab-project" onclick="switchTab('project')"
+          style="padding: 0.75rem 1.75rem; border: none; background: none; cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--text-secondary); border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.3s ease; border-radius: 0; font-family: inherit;">
+          <span class="lang-id">Proyek</span><span class="lang-en">Projects</span>
+        </button>
+      </div>
+
+      <!-- === TAB: PENGALAMAN KERJA === -->
+      <div id="panel-work" class="tab-panel">
+
+        <!-- Experience 1 -->
+        <div class="project-item">
+          <div class="project-content reveal-left">
+            <span class="badge"
+              style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Geoswara
+              Surveys</span>
+            <h3 class="project-title text-2xl font-extrabold tracking-tight" style="font-size: 2rem; margin-top: 1rem;">
+              GIS Staff</h3>
+            <p class="project-desc">
+              <span class="lang-id"><strong>Delineasi dan Inventarisasi Bidang Tanah:</strong> Manajemen data spasial
+                end-to-end, termasuk delineasi dan inventarisasi kepemilikan lahan ROW SUTT 150 Kv KEK Kendal
+                berdasarkan
+                data Stake Out lapangan.<br><br><strong>Visualisasi Data:</strong> Memvisualisasikan hasil pengolahan
+                data
+                bidang tanah untuk keperluan proyek ROW.</span>
+              <span class="lang-en"><strong>Land Delineation and Inventory:</strong> End-to-end spatial data management,
+                delineating and inventorying land ownership for ROW SUTT 150 Kv KEK Kendal based on field Stake Out
+                data.<br><br><strong>Data Visualization:</strong> Visualizing processed land parcel data for the ROW
+                project.</span>
+            </p>
+          </div>
+          <div class="project-visual reveal-right delay-100">
+            <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+              <div class="glass-card-body">
+                <img src="./assets/images/geoswara_surveys.jpg" alt="Geoswara Surveys - GIS Staff Project Experience"
+                  style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Experience 2 -->
-      <div class="project-item">
-        <div class="project-content reveal-left">
-          <span class="badge"
-            style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Burkitt
-            Analytics</span>
-          <h3 class="project-title text-2xl font-extrabold tracking-tight" style="font-size: 2rem; margin-top: 1rem;">
-            GIS Specialist</h3>
-          <p class="project-desc">
-            <span class="lang-id"><strong>Visualisasi WebGIS:</strong> Berkontribusi mengembangkan WebGIS Dingo Baiting
-              Maps 2030 untuk memvisualisasikan data pengendalian satwa liar Anjing Dingo di New South Wales dan
-              Victoria,
-              Australia.<br><br><strong>Otomatisasi Data Python:</strong> Membangun alur otomatisasi data spasial
-              menggunakan Python untuk menyiapkan dataset terstruktur demi kemudahan analisis dan pengembangan
-              WebGIS.</span>
-            <span class="lang-en"><strong>WebGIS Visualization:</strong> Contributed to the WebGIS Dingo Baiting Maps
-              2030, visualizing wildlife data in NSW and Victoria, Australia.<br><br><strong>Python Data
-                Automation:</strong> Built automated spatial data workflows using Python to prepare structured datasets,
-              supporting analysis and WebGIS deployment.</span>
-          </p>
-          <a href="https://dingonetwork.org.au/map" target="_blank" class="project-link">
-            <span class="lang-id">Kunjungi WebGIS</span><span class="lang-en">Visit WebGIS</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="project-visual reveal-right delay-100">
-          <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
-
-            <div class="glass-card-body">
-              <img src="./assets/images/burkitt_dingo.png" alt="Burkitt Analytics - Dingo 2030 Network WebGIS"
-                style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Experience 2 -->
+        <div class="project-item">
+          <div class="project-content reveal-left">
+            <span class="badge"
+              style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Burkitt
+              Analytics</span>
+            <h3 class="project-title text-2xl font-extrabold tracking-tight" style="font-size: 2rem; margin-top: 1rem;">
+              GIS Specialist</h3>
+            <p class="project-desc">
+              <span class="lang-id"><strong>Visualisasi WebGIS:</strong> Berkontribusi mengembangkan WebGIS Dingo
+                Baiting
+                Maps 2030 untuk memvisualisasikan data pengendalian satwa liar Anjing Dingo di New South Wales dan
+                Victoria,
+                Australia.<br><br><strong>Otomatisasi Data Python:</strong> Membangun alur otomatisasi data spasial
+                menggunakan Python untuk menyiapkan dataset terstruktur demi kemudahan analisis dan pengembangan
+                WebGIS.</span>
+              <span class="lang-en"><strong>WebGIS Visualization:</strong> Contributed to the WebGIS Dingo Baiting Maps
+                2030, visualizing wildlife data in NSW and Victoria, Australia.<br><br><strong>Python Data
+                  Automation:</strong> Built automated spatial data workflows using Python to prepare structured
+                datasets,
+                supporting analysis and WebGIS deployment.</span>
+            </p>
+            <a href="https://dingonetwork.org.au/map" target="_blank" class="project-link">
+              <span class="lang-id">Kunjungi WebGIS</span><span class="lang-en">Visit WebGIS</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="project-visual reveal-right delay-100">
+            <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+              <div class="glass-card-body">
+                <img src="./assets/images/burkitt_dingo.png" alt="Burkitt Analytics - Dingo 2030 Network WebGIS"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Experience 3 -->
-      <div class="project-item">
-        <div class="project-content reveal-left">
-          <span class="badge"
-            style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Dinas
-            Bina Marga & Penataan Ruang Jabar</span>
-          <h3 class="project-title text-2xl font-extrabold tracking-tight" style="font-size: 2rem; margin-top: 1rem;">
-            <span class="lang-id">Tim Pengendalian & Pengawasan</span>
-            <span class="lang-en">Control & Supervision Team</span>
-          </h3>
-          <p class="project-desc">
-            <span class="lang-id"><strong>Pemutakhiran Data Citarum Hilir:</strong> Digitasi onscreen, topology check,
-              pembaruan toponimi, dan ground truthing kawasan seluas 12.000 hektar (Peta Tutupan Lahan, Peta
-              Survei).<br><br><strong>Analisis Kepadatan Bangunan:</strong> Analisis spasial kepadatan bangunan dalam
-              kawasan Citarum Hilir.</span>
-            <span class="lang-en"><strong>Citarum Hilir Data Update:</strong> Onscreen digitizing, topology checks,
-              toponymy updates, and ground truthing for a 12,000-hectare area (Land Cover Maps, Survey
-              Maps).<br><br><strong>Building Density Analysis:</strong> Spatial analysis of building density in the
-              Citarum Hilir region.</span>
-          </p>
-          <a href="./webgis.html" target="_blank" class="project-link">
-            <span class="lang-id">Kunjungi WebGIS</span><span class="lang-en">Visit WebGIS</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2">
-              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
-              </path>
-            </svg>
-          </a>
-        </div>
-        <div class="project-visual reveal-right delay-100">
-          <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
-
-            <div class="glass-card-body"
-              style="background-color: #f8fafc; display: flex; align-items: center; justify-content: center; position: relative;">
-              <div id="map-citarum" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
+        <!-- Experience 3 -->
+        <div class="project-item">
+          <div class="project-content reveal-left">
+            <span class="badge"
+              style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">Dinas
+              Bina Marga & Penataan Ruang Jabar</span>
+            <h3 class="project-title text-2xl font-extrabold tracking-tight" style="font-size: 2rem; margin-top: 1rem;">
+              <span class="lang-id">Tim Pengendalian & Pengawasan</span>
+              <span class="lang-en">Control & Supervision Team</span>
+            </h3>
+            <p class="project-desc">
+              <span class="lang-id"><strong>Pemutakhiran Data Citarum Hilir:</strong> Digitasi onscreen, topology check,
+                pembaruan toponimi, dan ground truthing kawasan seluas 12.000 hektar (Peta Tutupan Lahan, Peta
+                Survei).<br><br><strong>Analisis Kepadatan Bangunan:</strong> Analisis spasial kepadatan bangunan dalam
+                kawasan Citarum Hilir.</span>
+              <span class="lang-en"><strong>Citarum Hilir Data Update:</strong> Onscreen digitizing, topology checks,
+                toponymy updates, and ground truthing for a 12,000-hectare area (Land Cover Maps, Survey
+                Maps).<br><br><strong>Building Density Analysis:</strong> Spatial analysis of building density in the
+                Citarum Hilir region.</span>
+            </p>
+            <a href="./webgis.html" target="_blank" class="project-link">
+              <span class="lang-id">Kunjungi WebGIS</span><span class="lang-en">Visit WebGIS</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <div class="project-visual reveal-right delay-100">
+            <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+              <div class="glass-card-body"
+                style="background-color: #f8fafc; display: flex; align-items: center; justify-content: center; position: relative;">
+                <div id="map-citarum" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+
+      </div><!-- end #panel-work -->
+
+      <!-- === TAB: PROYEK === -->
+      <div id="panel-project" class="tab-panel" style="display: none;">
+
+        <!-- Skripsi -->
+        <div class="project-item">
+          <div class="project-content reveal-left">
+            <span class="badge"
+              style="background: rgba(37, 99, 235, 0.1); color: var(--text-primary); border: 1px solid var(--border-color);">
+              <span class="lang-id">SKRIPSI</span>
+              <span class="lang-en">BACHELOR THESIS</span>
+            </span>
+            <h3 class="project-title text-2xl font-extrabold tracking-tight"
+              style="font-size: 1.75rem; margin-top: 1rem;">
+              <span class="lang-id">Pemetaan Sebaran dan Daya Layan Sekolah Menengah Atas Negeri di Kabupaten
+                Jepara</span>
+              <span class="lang-en">Mapping the Distribution and Service Area of Public Senior High Schools in Jepara
+                Regency</span>
+            </h3>
+            <p class="project-desc">
+              <span class="lang-id">
+                <strong>Pemetaan Sebaran SMA Negeri:</strong> Memetakan distribusi spasial seluruh SMA Negeri di
+                Kabupaten Jepara menggunakan data GIS untuk mengidentifikasi pola persebaran sekolah.
+                <br><br>
+                <strong>Analisis Daya Layan:</strong> Menganalisis jangkauan dan kapasitas pelayanan pendidikan tiap
+                sekolah terhadap wilayah sekitarnya menggunakan metode buffer dan analisis spasial berbasis jaringan
+                jalan.
+                <br><br>
+                <strong>Identifikasi Kesenjangan:</strong> Menginventarisasi kecamatan yang belum terlayani fasilitas
+                SMA Negeri guna mendukung perencanaan pemerataan pendidikan di Kabupaten Jepara.
+              </span>
+              <span class="lang-en">
+                <strong>Public Senior High School Distribution Mapping:</strong> Spatially mapped all public senior high
+                schools (SMA Negeri) in Jepara Regency using GIS data to identify spatial distribution patterns.
+                <br><br>
+                <strong>Service Area Analysis:</strong> Analyzed the service coverage and educational capacity of each
+                school using buffer analysis and road network-based spatial methods.
+                <br><br>
+                <strong>Gap Identification:</strong> Inventoried sub-districts lacking access to public senior high
+                schools to support equitable education planning in Jepara Regency.
+              </span>
+            </p>
+            <div class="hero-tags" style="margin-top: 1.25rem; margin-bottom: 1rem;">
+              <span class="tag">QGIS</span>
+              <span class="tag">ArcGIS</span>
+              <span class="tag">Spatial Analysis</span>
+              <span class="tag">Network Analysis</span>
+              <span class="tag">Buffer Analysis</span>
+            </div>
+          </div>
+          <div class="project-visual reveal-right delay-100">
+            <div class="glass-card" style="box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+              <div class="glass-card-body"
+                style="background: linear-gradient(135deg, #1e3a5f 0%, #0f6b3e 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                <!-- Map-themed decorative background -->
+                <div style="position: absolute; inset: 0; opacity: 0.15;">
+                  <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,150 Q100,80 200,130 T400,100" stroke="white" stroke-width="2" fill="none"
+                      opacity="0.6" />
+                    <path d="M0,200 Q80,140 180,170 T400,160" stroke="white" stroke-width="1.5" fill="none"
+                      opacity="0.4" />
+                    <path d="M50,0 Q80,100 60,200 T80,300" stroke="white" stroke-width="1" fill="none" opacity="0.3" />
+                    <path d="M200,0 Q220,80 200,180 T220,300" stroke="white" stroke-width="1" fill="none"
+                      opacity="0.3" />
+                    <circle cx="120" cy="130" r="8" fill="#4ade80" opacity="0.9" />
+                    <circle cx="200" cy="100" r="8" fill="#4ade80" opacity="0.9" />
+                    <circle cx="280" cy="160" r="8" fill="#4ade80" opacity="0.9" />
+                    <circle cx="160" cy="200" r="8" fill="#4ade80" opacity="0.9" />
+                    <circle cx="320" cy="110" r="8" fill="#4ade80" opacity="0.9" />
+                    <circle cx="80" cy="180" r="8" fill="#4ade80" opacity="0.9" />
+                    <circle cx="240" cy="220" r="8" fill="#60a5fa" opacity="0.9" />
+                    <line x1="120" y1="130" x2="200" y2="100" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"
+                      opacity="0.7" />
+                    <line x1="200" y1="100" x2="280" y2="160" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"
+                      opacity="0.7" />
+                    <line x1="120" y1="130" x2="160" y2="200" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"
+                      opacity="0.7" />
+                    <line x1="280" y1="160" x2="320" y2="110" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"
+                      opacity="0.7" />
+                    <line x1="160" y1="200" x2="240" y2="220" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"
+                      opacity="0.7" />
+                    <circle cx="120" cy="130" r="30" stroke="#4ade80" stroke-width="1" fill="none" opacity="0.3" />
+                    <circle cx="200" cy="100" r="30" stroke="#4ade80" stroke-width="1" fill="none" opacity="0.3" />
+                    <circle cx="280" cy="160" r="30" stroke="#4ade80" stroke-width="1" fill="none" opacity="0.3" />
+                  </svg>
+                </div>
+                <!-- Content overlay -->
+                <div style="position: relative; z-index: 1; text-align: center; padding: 2rem; color: white;">
+                  <div
+                    style="width: 64px; height: 64px; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                      stroke="white" stroke-width="2">
+                      <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                    </svg>
+                  </div>
+                  <p style="font-size: 1.1rem; font-weight: 700; margin: 0 0 0.4rem; letter-spacing: 0.01em;">Kabupaten
+                    Jepara</p>
+                  <p style="font-size: 0.8rem; opacity: 0.8; margin: 0;">Analisis Spasial SMA Negeri</p>
+                  <div style="display: flex; gap: 1.25rem; justify-content: center; margin-top: 1.25rem;">
+                    <div style="text-align: center;">
+                      <p style="font-size: 1.5rem; font-weight: 800; margin: 0; color: #4ade80;">16</p>
+                      <p style="font-size: 0.7rem; opacity: 0.75; margin: 0;"><span
+                          class="lang-id">Kecamatan</span><span class="lang-en">Districts</span></p>
+                    </div>
+                    <div style="text-align: center;">
+                      <p style="font-size: 1.5rem; font-weight: 800; margin: 0; color: #60a5fa;">SMA</p>
+                      <p style="font-size: 0.7rem; opacity: 0.75; margin: 0;"><span class="lang-id">Negeri</span><span
+                          class="lang-en">Public Schools</span></p>
+                    </div>
+                    <div style="text-align: center;">
+                      <p style="font-size: 1.5rem; font-weight: 800; margin: 0; color: #f9a8d4;">GIS</p>
+                      <p style="font-size: 0.7rem; opacity: 0.75; margin: 0;"><span class="lang-id">Analisis</span><span
+                          class="lang-en">Analysis</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end #panel-project -->
 
     </div>
   </section>
 
   <!-- CTA / Contact -->
-  <section id="contact" class="section" style="background-color: transparent; text-align: center; padding: 6rem 1.5rem;">
+  <section id="contact" class="section"
+    style="background-color: transparent; text-align: center; padding: 6rem 1.5rem;">
     <div class="container reveal-scale">
       <h2 class="section-title" style="margin-bottom: 1.5rem;">
         <span class="lang-id">Mari Berkolaborasi!</span>
@@ -585,7 +728,8 @@
 
   <!-- Back to Top Floating Button -->
   <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
   </button>
